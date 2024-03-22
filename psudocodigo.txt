@@ -2,7 +2,7 @@ psudocodigo
 
 Star
 	#declarar variables
-	Declare Real frecuencia, probabilidad_accumuladad, probalidad
+	Declare Real frecuencia, probabilidad_accumuladad, probabilidad
 	Declare Constant mu= 1000
 	Declare Constant sigma= 300
 	Declare Constant pi=3.14
@@ -14,7 +14,7 @@ Star
 	Display "ingrese frecuencia"
 	input frecuencia
     	
-	For x = 0 to frequencia step 1
+	For x = 0 to frequencia
 		set probailidad== 1 / (sigma * sqrt(2 * pi)) * exp(-0.5 * ((x - mu) / sigma)^2)
 		Set probabildad_accumuladad = probabilidad_accumuladad + probabilidad
 	End for
