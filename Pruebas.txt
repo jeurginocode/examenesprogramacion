@@ -32,7 +32,7 @@ inserte un valor mayor ha cero
 
 prueba 3
 
-¿para qué valor de frecuencia la señal deja de ser bloqueada? es 842
+¿para qué valor de frecuencia la señal deja de ser bloqueada? es 843
 
 valores constante:
 mu=1000
@@ -40,16 +40,26 @@ sigma300
 probabilidad_accumuladad=0
 
 
-si el usuario ingresa 842 :
-frecuencia insertada= 842
+si el usuario ingresa 843 :
+frecuencia insertada= 843
 
 resultado:
 
 la señal 843 hz pasa el filtro.
 
+prueba 4
+
+valores constante:
+mu=1000
+sigma300
+probabilidad_accumuladad=0
 
 
+si el usuario ingresa -4:
+frecuencia insertada= -4
 
+resultado:
+inserte un valor positivo
 
 
 
