@@ -15,15 +15,17 @@ Star
 	input frecuencia
     	
 	For x = 0 to frequencia
-		set probailidad== 1 / (sigma * sqrt(2 * pi)) * exp(-0.5 * ((x - mu) / sigma)^2)
+		set probailidad = 1 / (sigma * sqrt(2 * pi)) * exp(-0.5 * ((x - mu) / sigma)^2)
 		Set probabildad_accumuladad = probabilidad_accumuladad + probabilidad
 	End for
-		
-	if frecuencia < 0 then
-		display "numeros negativos no son permitidos"
+	
 	if frecuencia==0 then
 		display "inserte valor mayor ha cero"
-	
+	end if
+
+	if frecuencia < 0 then
+		display "numeros negativos no son permitidos"
+	End if
 
 	 If probabilidad_accumuladad > porcentage Then
 		Display "la señal pasa el filtro."
