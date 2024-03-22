@@ -1,0 +1,48 @@
+Analisis
+
+programa de filtrar señales
+
+problema:
+Filtrar señales utilizando la función de probabilidad de la campana de Gauss.
+
+descripcion de problema:
+ Este algoritmo va ha utilizar la ecuacion de  funcion de densidad de probalidad(fdp) de la campana de Gauss(distribucion normal), segun la probalidad acumulada de  fdp.
+
+f(x)=(1/ 𝜎✓2PI)e^-½(x-𝜇/𝜎)^2
+
+Donde 𝑥 es la frecuencia, 𝜇 la media y 𝜎 la desviación. Para el modelo, utilice como valores para los parámetros:𝜇=1000𝐻𝑧y 𝜎=300𝐻𝑧. 
+
+Parámetros y Variables:
+-Frecuencia de la señal (x): Valor de entrada proporcionado por el usuario.
+-Media (μ): (1000 , Hz) (valor constante).
+-Desviación estándar (σ): (300 , Hz) (valor constante).
+-Probabilidad acumulada: Calculada a partir de la fdp.
+-probabilidad acumulada:La probabilidad acumulada de una función de densidad de probabilidad (FDP) es basicamente la probalidad de una  variable aleatoria X sea menor o igual a un valor particular X. Es decir, que la probabilidad acumulada de l funciona, se calcula sumando las densidades de probabilidad para todos los valores menores o iguales a x, osea , la probabilidad acumulada se define como:
+  
+  F(x) = P(X ≤ x)
+
+
+Entrada(s):
+-la Frecuencia de señal de entrada
+
+Proceso(s):
+1.El usuario ingresa la frecuencia de la señal.
+2.Calculamos la fdp utilizando la fórmula mencionada anteriormente.
+3.Sumamos la fdp para todas las frecuencias desde cero hasta la frecuencia de la señal de entrada para obtener la probabilidad acumulada.
+4.Comparamos la probabilidad acumulada con el umbral del 30%.
+5.Si la probabilidad acumulada es mayor al 30%, mostramos un mensaje indicando que la señal pasa; de lo contrario, mostramos un mensaje indicando que la señal es bloqueada
+
+Resultado(s):
+-proporcionar un mensaje que indique si la señal pasa o es bloqueada por el filtro.
+
+Restricciones:
+-determinar si una  señal insertada por el usuario (frecuencia de señal de entrada), pasa el filtro o es bloqueada en funcion de la probabilidad acumalada de fdp.
+-la probalidad se calcula sumando el fdp para todas las frecuencias hasta la frecuencia de señal insertada.
+- si esta probabilidad acumulada es mayor 30% la señal pasa; si no, es bloqueada
+
+otras variable:
+-iterar utilizando ciclo for
+
+
+
+

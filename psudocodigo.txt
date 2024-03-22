@@ -1,0 +1,36 @@
+psudocodigo
+
+Star
+	#declarar variables
+	Declare Real frecuencia, probabilidad_accumuladad, probalidad
+	Declare Constan mu= 1000
+	Declare Constan sigma= 300
+	Declare Constan pi=3.14
+	Declare Constan porcentage= 0.30
+	
+	#parametros
+   	Set probabilidad_accumuladad = 0
+
+	Display "ingrese frecuencia"
+	input frecuencia
+    	
+	For x = 0 to frequency step 1
+		set probailidad== 1 / (sigma * sqrt(2 * pi)) * exp(-0.5 * ((x - mu) / sigma)^2)
+		Set probabildad_accumuladad = probabilidad_accumuladad + probabilidad
+	End for
+		
+	if frecuencia < 0 then
+		display "numeros negativos no son permitidos"
+	else frecuencia==0 the
+		display "inserte valor mayor ha cero"
+	
+
+	 If probabilidad_accumuladad > porcentage Then
+		Display "la senal pasa el filtro."
+	 Else
+ 		Display "la señal es bloqueada"
+	 End if
+Stop
+
+
+	
